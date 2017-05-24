@@ -1,3 +1,4 @@
+import { AppRoutingModule } from './app-routing.module';
 import { InitialModule } from './initial/initial.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -14,12 +15,10 @@ import { InitialComponent } from './initial/initial.component';
   ],
   imports: [
     BrowserModule,
-    FormsModule,
-    HttpModule,
-    InitialModule
+    InitialModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
- 
